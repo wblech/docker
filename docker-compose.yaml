@@ -44,7 +44,7 @@ services:
             test:
                 [
                     "CMD-SHELL",
-                    'mysql -uroot --database=laravel --password:root --execute="SELECT COUNT(table_name) > 0 FROM information_schema.tables;" --skip-column-names -B',
+                    'mysql -uroot --database=laravel --password=root --execute="SELECT COUNT(table_name) > 0 FROM information_schema.tables;" --skip-column-names -B',
                 ]
             interval: 10s
             timeout: 10s
